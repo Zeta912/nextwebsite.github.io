@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "nextwebsite.github.io",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "F:/HTML/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "nextwebsite.github.io"
+	}
+}
