@@ -5,6 +5,11 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+.body {
+    display: flex;
+    height: 100vh;
+}
+
 .navbar {
     background-color: #131313;
     height: 80px;
@@ -456,8 +461,8 @@
 
 /* Footer Section */
 .footer__container {
-    background-color: #141414;
-    padding: 5rem 0;
+    background: #141414;
+    padding: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -481,10 +486,7 @@
 }
 
 .footer__link--wraper {
-    min-height: 100px;
-    position: relative;
     display: flex;
-   
 }
 
 .footer__link--items {
@@ -497,13 +499,11 @@
     box-sizing: border-box;
 }
 
-.footer__link--items h2 {
-    padding: 2.5rem;
-    position: relative;
-    margin-bottom: 20rem;
+.footer__link--items h3 {
+    margin-bottom: 16px;
 }
 
-.footer__link--items > h2 {
+.footer__link--items > h3 {
     color: #fff;
 }
 
@@ -518,6 +518,71 @@
     transition: 0.3s ease-out;
 }
 
+/* Social Icons */
+.social__icon--link {
+    color: #fff;
+    font-size: 18px;
+}
+
 .social__media {
-    background: #141414;
+    max-width: 1000px;
+    width: 100%
+}
+
+.social__media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+}
+
+.social__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+.social__logo {
+    color: #fff;
+    justify-self: flex-start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.website__rights {
+    color: #fff;
+}
+
+@media screen and (max-width: 820) {
+    .footer__links {
+        padding-top: 2rem;
+    }
+
+    #footer__logo {
+        margin-bottom: 2rem;
+    }
+
+    .website__rights {
+        margin-bottom: 2rem;
+    }
+
+    .footer__link--wraper {
+        flex-direction: column;
+    }
+
+    .social__media--wrap {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
 }
